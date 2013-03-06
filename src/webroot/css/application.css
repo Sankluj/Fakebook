@@ -1,0 +1,626 @@
+/********** Global **********/
+
+* {
+  margin: 0;
+}
+
+body {
+    color: #393733;
+    margin: 0;
+    padding: 0;
+    background: #e5ecf3;
+}
+
+body {
+    font: 83%/1.4 arial, helvetica, sans-serif;
+}
+
+a {
+  color: #105CB6;
+  cursor: pointer;
+  outline: none !important;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #105CB6;
+}
+
+a:hover, a:focus {
+  color: #003;
+  text-decoration: underline;
+}
+
+a:active {
+  color: #000;
+}
+
+a img {
+  border: none;
+}
+
+.clr {
+  clear: both;
+}
+
+ul {
+  list-style-type: square;
+}
+
+.green {
+  color: green;
+}
+
+.red {
+  color: red;
+}
+
+.yellow {
+  color: #BFB848;
+}
+
+.notimportant {
+  color: #999;
+}
+
+hr {
+  margin: 10px 0;
+  border: 0;
+  border-bottom: 1px dashed #ccc;
+}
+
+h3 {
+  font-weight: normal;
+}
+
+/********** Header **********/
+
+div#header {
+  
+}
+
+div#header h1 {
+  display: none;
+}
+
+div#header a#logo {
+  float: left;
+  height: 35px;
+  width: 97px;
+}
+
+div#header div.wrapper {
+  width: 950px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+div#header div.first_layer {
+  background-color: #395064;
+  padding: 5px 10px;
+}
+
+div#header div.second_layer {
+  background-color: #213130;
+}
+
+div#header div.third_layer {
+  background: url(../img/header_third_layer_br.png) no-repeat bottom right #c9c83e;
+}
+
+div#header div.third_layer div {
+  background: url(../img/header_third_layer_bl.png) no-repeat bottom left transparent;
+}
+/****** General Menus ******/
+div#partie_menu {
+  background-color: #BFB848;
+  width: 100%;
+  top:0px;
+  float: left;
+  margin: 0;
+  padding: 2px 5px 2px 5px;
+}
+div#partie_gauche {
+  width: 15%;
+  top:0px;
+  float: left;
+  margin: 0;
+  padding: 2px 5px 2px 5px;
+}
+div#partie_droite {
+  width: 15%;
+  left: 0px;
+  top:0px;
+  float: right;
+  margin: 0;
+  padding: 2px 5px 2px 5px;
+}
+div#BarreNavigation {
+	margin: 0;
+	float: left;
+	padding: 2px 5px 2px 5px;
+}
+/********** Menus **********/
+
+div#header ul {
+  float: left;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+div#header ul li {
+  float: left;
+  margin: 0;
+  padding: 0;
+}
+
+div#header ul li a {
+  display: block;
+  float: left;
+  color: white;
+  font-weight: bold;
+  line-height: 30px;
+  height: 30px;
+  padding: 0 13px;
+}
+
+div#header ul li a:hover {
+  text-decoration: underline;
+}
+
+div#header ul#categories_nav li a { 
+  color: #213130;
+  padding: 0 10px;
+  font-size: 95%;
+}
+
+div#header ul#user_nav {
+  float: right;
+}
+
+div#header ul#user_nav li a { 
+  border-right: 1px solid #4d6274;
+  color: #d7dce0;
+}
+
+div#header ul#nav li a.current {
+  background: url(../img/header_second_layer_selected.png) no-repeat center bottom transparent;
+}
+
+div#header ul#categories_nav li a.current {
+  background: url(../img/header_third_layer_selected.png) no-repeat center bottom transparent;
+}
+
+/********** Flash Messages **********/
+
+div#flash_messages {
+  margin: 0 0 10px 0;
+  color: #6b683f;
+  background: url(../img/tl.gif) no-repeat left top #fff999;
+}
+
+div#flash_messages a {
+  text-decoration: underline;
+  color: #6b683f;
+}
+
+div#flash_messages a:hover {
+  text-decoration: none;
+}
+
+div#flash_messages.error {
+  color: #6b403f;
+  background-color: #ff9b99;
+}
+
+div#flash_messages.error a {
+  color: #6b403f;
+}
+
+div#flash_messages.valid {
+  color: #456b3f;
+  background-color: #a8ff99;
+}
+
+div#flash_messages.valid a {
+  color: #456b3f;
+}
+
+div#content div#flash_messages p {
+  padding: 0 10px 0 20px;
+}
+
+div#flash_messages div.tr {
+  margin: 0 0 0 10px;
+  height: 10px;
+  background: url(../img/tr.gif) no-repeat right top transparent;
+}
+
+div#flash_messages div.bl {
+  background: url(../img/bl.gif) no-repeat left bottom transparent;
+}
+
+div#flash_messages div.br {
+  margin: 0 0 0 10px;
+  height: 10px;
+  background: url(../img/br.gif) no-repeat right bottom transparent;
+}
+
+/********** Content **********/
+
+div#content {
+  padding: 10px 0 0 0;
+}
+
+div#content div.wrapper {
+  width: 950px;
+  margin: 0 auto;
+}
+
+div#content p {
+  padding: 3px 0;
+}
+
+div#content h2 {
+  font-weight: normal;
+}
+
+/********** Form **********/
+
+div#page form {
+  margin: 0 1em 0 0;
+}
+
+div#page input[type=text], div#page input[type=password] {
+  border: 1px solid #aaa;
+}
+
+div#page input.form-error, div#page textarea.form-error {
+  border: 2px solid red;
+}
+
+div#page input, div#page textarea {
+  font-size: 1em;
+  padding: 0.2em;
+}
+
+div#page textarea {
+  font-size: 1.3em;
+}
+
+div#page form p {
+  padding: 0.5em 0;
+}
+
+div#page span.help {
+  font-size: 0.95em;
+  color: #666;
+}
+
+/********** Important **********/
+
+div#content div.important {
+  margin: 1.5em 0;
+  padding: 0.5em;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  background-color: #f6f6f6;
+}
+
+div#content a.selected {
+  border-bottom: 1px dotted #2772e3;
+}
+
+div#content div.important a.selected:hover {
+  text-decoration: none;
+}
+
+div#content div.important p {
+  padding: 0;
+}
+
+div#content div.important form {
+  margin: 0;
+}
+
+div#content div.important form div.block {
+  float: left;
+  margin: 0 0.5em 0 0;
+}
+
+div#content div.important form input[type=text] {
+  width: 80px;
+}
+
+/********** Page **********/
+
+div#page {
+  background: url(../img/tl.gif) no-repeat left top white;
+}
+
+div#pagecontent {
+  padding: 5px 10px 10px 10px;
+}
+
+div#page div.tr {
+  margin: 0 0 0 5px;
+  height: 5px;
+  background: url(../img/tr.gif) no-repeat right top transparent;
+}
+
+div#page div.bl {
+  background: url(../img/bl.gif) no-repeat left bottom transparent;
+}
+
+div#page div.br {
+  margin: 0 0 0 5px;
+  height: 5px;
+  background: url(../img/br.gif) no-repeat right bottom transparent;
+}
+
+/********** Footer **********/
+
+div#footer {
+  clear: both;
+}
+
+div#footer, div#footer a {
+  color: #111;
+}
+
+div#footer p {
+  padding: 1em;
+  font-size: 1em;
+  text-align: center;
+}
+
+div#footer p span {
+  font-size: 0.8em;
+  color: #333;
+}
+
+
+/********** Buttons **********/
+
+.buttons a , .buttons button{
+    display:block;
+    float:left;
+    margin:0 7px 0 0;
+    background-color:#f5f5f5;
+    border:1px solid #dedede;
+    border-top:1px solid #eee;
+    border-left:1px solid #eee;
+
+    font-family:"Lucida Grande", Tahoma, Arial, Verdana, sans-serif;
+    font-size:100%;
+    line-height:130%;
+    text-decoration:none;
+    font-weight:bold;
+    color:#565656;
+    cursor:pointer;
+    padding:5px 10px 6px 7px; /* Links */
+}
+
+div.important .buttons a, div.important .buttons button{
+  border:1px solid #bbb;
+  border-top:1px solid #ccc;
+  border-left:1px solid #ccc;
+}
+
+.buttons button{
+    width:auto;
+    overflow:visible;
+    padding:4px 10px 3px 7px; /* IE6 */
+}
+
+.buttons button[type]{
+    padding:5px 10px 5px 7px; /* Firefox */
+    line-height:17px; /* Safari */
+}
+
+*:first-child+html button[type]{
+    padding:4px 10px 3px 7px; /* IE7 */
+}
+
+.buttons button img, .buttons a img{
+    margin:0 3px -3px 0 !important;
+    padding:0;
+    border:none;
+    width:16px;
+    height:16px;
+}
+
+/* STANDARD */
+
+button:hover, .buttons a:hover{
+    background-color:#dff4ff;
+    border:1px solid #c2e1ef;
+    color:#336699;
+}
+
+.buttons a:active{
+    background-color:#6299c5;
+    border:1px solid #6299c5;
+    color:#fff;
+}
+
+/* POSITIVE */
+
+button.positive, .buttons a.positive{
+    color:#529214;
+}
+
+.buttons a.positive:hover, button.positive:hover{
+    background-color:#E6EFC2;
+    border:1px solid #C6D880;
+    color:#529214;
+}
+
+.buttons a.positive:active{
+    background-color:#529214;
+    border:1px solid #529214;
+    color:#fff;
+}
+
+/* NEGATIVE */
+
+.buttons a.negative, button.negative{
+    color:#d12f19;
+}
+
+.buttons a.negative:hover, button.negative:hover{
+    background:#fbe3e4;
+    border:1px solid #fbc2c4;
+    color:#d12f19;
+}
+
+.buttons a.negative:active{
+    background-color:#d12f19;
+    border:1px solid #d12f19;
+    color:#fff;
+}
+
+/********** Icons **********/
+
+a.edit, a.add, span.calendar, a.loading, a.delete, a.not_favourite, a.favourite, a.user, a.view, span.category {
+  background-image: url(../img/pencil.png);
+  background-repeat: no-repeat;
+  background-position: left center;
+  padding-left: 20px;
+  border: none;
+}
+
+a.user {
+  background-image: url(../img/user.png);
+}
+
+span.category {
+  background-image: url(../img/tag_blue.png);
+}
+
+a.view {
+  background-image: url(../img/tick.png);
+}
+
+a.not_favourite {
+  background-image: url(../img/yellowstar_empty.png);
+}
+
+a.favourite {
+  background-image: url(../img/yellowstar.png);
+}
+
+a.loading {
+  background-image: url(../img/snake_transparent.gif);
+}
+
+a.add {
+  background-image: url(../img/add.png);
+}
+
+a.delete {
+  background-image: url(../img/delete.png);
+}
+
+span.calendar {
+  background-image: url(../img/calendar.png);
+}
+
+/********** Paginator **********/
+
+div#paginator {
+  padding: 1em 0 0 0;
+  text-align: center;
+}
+
+div#paginator a {
+  margin: 0.2em 0.3em;
+  padding: 0.15em 0.4em;
+  border: 1px solid #105CB6;
+}
+
+div#paginator a:hover {
+  color: white;
+  background-color: #105CB6;
+  text-decoration: none;
+}
+
+/********** Tables **********/
+
+div#page table {
+  width: 100%;
+}
+
+div#page table tr td, div#page table th {
+  padding: 0.1em 0.3em;
+}
+
+div#page table tr:hover td, div#page table tr.odd:hover td {
+  background-color: #fff999;
+}
+
+div#page table.no_effect tr:hover td, div#page table.no_effect tr.odd:hover td {
+  background-color: transparent;
+}
+
+div#page table tr.odd td {
+  background-color: #f0f0f0;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+
+div#page table tr td.num {
+  font-weight: bold;
+  width: 1px;
+}
+
+div#page table tr td.link {
+  font-weight: bold;
+  text-align: center;
+}
+
+div#page table th {
+  text-align: left;
+  color: #333;
+  background-color: #395064;
+  color: white;
+  border-bottom: 1px solid #213130;
+}
+
+/********** Stories **********/
+
+div#stories {
+}
+
+div#stories div.entry {
+  margin: 5px 0;
+  padding: 5px 5px 10px 5px;
+  border-bottom: 1px dashed #ccc;
+}
+
+div#stories p.content {
+  text-align: justify;
+  font-size: 105%;
+}
+
+div#stories p.infos {
+  padding-top: 0;
+  color: #999;
+}
+
+div#stories a.notimportant, div#stories span.notimportant {
+  color: #666;
+}
+
+div#stories a.admin {
+  color: #ff5e3d
+}
+
+/********** Comments **********/
+
+div#comments div.entry {
+  margin: 3px 0;
+  padding: 3px 3px 6px 3px;
+  border-bottom: 1px dashed #ccc;
+}
